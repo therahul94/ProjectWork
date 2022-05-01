@@ -116,7 +116,7 @@ let deletedBlogs = async function (req, res) {
       { new: true }
     );
 
-    return res.status(202).send({ status: true, msg: "blog is deleted" });
+    return res.status(200).send({ status: true, msg: "blog is deleted" });
   } catch (err) {
     res.status(500).send({ status: false, msg: err.message });
   }
